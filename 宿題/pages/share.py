@@ -25,7 +25,7 @@ st.sidebar.write("こちらは株価可視化ツールです。以下のオプ�
 
 st.sidebar.write("表示日数選択") # サイドバーに表示
 
-days = st.sidebar.slider('日数', 1, 50, 20) # サイドバーに表示　取得するための日数をスライドバーで表示し、daysに代入
+days = st.slider('日数', 1, 50, 20) # サイドバーに表示　取得するための日数をスライドバーで表示し、daysに代入
 
 st.write(f"過去 {days}日間 の株価") # 取得する日数を表示
 
@@ -48,7 +48,7 @@ def get_data(days, tickers):
 
 # チャートに表示する範囲をスライドで表示し、それぞれをymin, ymaxに代入
 st.write("株価の範囲指定") # サイドバーに表示
-ymin, ymax = st.sidebar.slider(
+ymin, ymax = st.slider(
     '範囲を指定してください。',
     0.0, 5000.0, (0.0, 5000.0)
 ) # サイドバーに表示
