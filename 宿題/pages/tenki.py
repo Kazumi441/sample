@@ -2,6 +2,8 @@ import streamlit as st # フロントエンドを扱うstreamlitの機能をイ�
 import requests # リクエストするための機能をインポート
 from datetime import datetime # 現在時刻などの時間を扱う機能をインポート
 import pandas as pd # データフレームを扱う機能をインポート
+def show():
+    st.write("天気")
 
 # 選択肢を作成
 city_code_list = {

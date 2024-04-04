@@ -3,6 +3,9 @@ import pandas as pd # データフレームを扱う機能をインポート
 import yfinance as yf # yahoo financeから株価情報を取得するための機能をインポート
 import altair as alt # チャート可視化機能をインポート
 
+def show():
+    st.write("株価可視化")
+
 #取得する銘柄の名前とキーを変換する一覧を設定
 #東証などのシンボルはhttps://support.yahoo-net.jp/PccFinance/s/article/H000006603で検索できる
 tickers = {
